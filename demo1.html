@@ -1,0 +1,109 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,scale=1.0">
+<style>
+ .header {
+    width: 90%;
+    background: #FFF;
+    border: 1px solid #dacdcd;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.2);
+    margin: auto;
+    box-sizing: border-box;
+}
+   
+ .logo-left {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: 85px 30px;
+    width: 85px;
+    height: 30px;
+    margin: 20px 0px 20px 20px;
+    display: -webkit-inline-box;
+}
+ul.list {
+    list-style: none;
+    display: -webkit-inline-box;
+    position: absolute;
+    line-height: 55px;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    box-sizing: border-box;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 0px 20px;
+    color: #414446;
+    font-family: sans-serif;
+    line-height: 72px;
+    font-size: small;
+    font-weight: bolder;
+}
+    .header:after{clear:both}
+    .accordion-content {
+    width: 90%;
+    margin: auto;
+    background: lightgray;
+    padding: 20px;
+    box-sizing: border-box;
+}
+    .accordion-toggle {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background: #6ed63a;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0p 10px 10px rgba(0,0,0,0.2);
+        cursor:pointer;
+}
+    
+    
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+    <div class="logo-left">
+       
+        </div>
+    <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+        <li><a href="#">Menu3</a></li>
+        
+        </ul>
+        <div class="logo-right">
+       
+        </div>
+    </div>
+    <h3 class="accordion-toggle">
+    accordion
+    </h3>
+    <div class="accordion-content">
+    Raghav
+    </div>
+    <h3 class="accordion-toggle">
+    accordion
+    </h3>
+    <div class="accordion-content">
+    Raghav
+    </div>
+    <script>
+        
+    $(document).ready(function(){
+	$(".accordion-content").hide();
+      $(".accordion-toggle").click(function(){
+        $(this).next(".accordion-content").slideToggle(250);          });     
+    });
+    
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    </body>
+    
+</html>
